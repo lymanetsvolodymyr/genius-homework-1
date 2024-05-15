@@ -1,3 +1,24 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-weight: 300;
+  src: url('../fonts/roboto-v30-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 :root {
   --color-brand: rgba(43, 127, 255, 1);
   --color-primary: rgba(255, 255, 255, 1);
@@ -6,7 +27,16 @@
 
 body {
   color: var(--color-primary-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
 }
+
+address {
+  font-style: normal;
+}
+
 ul {
   list-style-type: none;
 }
@@ -15,8 +45,7 @@ ul {
   color: var(--color-primary);
   background-color: var(--color-brand);
   border: 2px solid var(--color-brand);
-  border-radius: 32;
-  padding: 16px, 32px, 16px, 32px;
+  border-radius: 32px;
   cursor: pointer;
 }
 
@@ -25,32 +54,83 @@ ul {
   background-color: transparent;
 }
 
+.logo {
+  text-decoration: none;
+}
+
 .link {
   color: var(--color-primary-dark);
+  text-decoration: none;
 }
 
 .link:hover {
   color: var(--color-brand);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.sectoin-title {
+  color: var(--color-primary-dark);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.section-title .accent {
+  color: var(--color-brand);
+  font-size: 22px;
+}
+
+/* profile-header */
+
+/* .profile-header {
+} */
+
+/* frame-section */
+
+.frame {
+  margin-left: 206px;
 }
 
 .hero-title {
   color: var(--color-brand);
 }
 
-.section-title {
-  color: var(--color-primary-dark);
+/* reincarnation-section*/
+
+.reincarnation-section {
+  margin-left: 100px;
 }
 
-.section-title .accent {
-  color: var(--color-brand);
+/* why-us-section */
+
+.why-us-section {
+  margin-left: 100px;
+  text-align: center;
 }
+
+/* our-procedures-section */
+
+.our-procedures-section {
+  text-align: center;
+}
+
+/* format-section */
+
+.contacts-section {
+  text-align: center;
+}
+
+/* Footer-section */
 
 .footer-title {
   color: var(--color-primary);
+  text-decoration: none;
 }
 
 .footer-title:hover {
   color: var(--color-brand);
+  text-decoration: underline;
 }
 
 .footer {
@@ -59,4 +139,8 @@ ul {
 
 .data {
   color: rgba(116, 114, 114, 1);
+}
+
+.icon-footer {
+  background-color: red;
 }
